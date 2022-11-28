@@ -12,11 +12,12 @@
   gap: 50px;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .title {
   text-align: center;
   font-weight: 900;
   color: #ccc;
+  margin-bottom: 50px;
 }

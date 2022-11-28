@@ -15,9 +15,30 @@ export const Profile = ({
     <div className={styles.profile}>
       <div className={styles.description}>
         <img src={avatar} alt="User avatar" className={styles.avatar} />
-        <p className={styles.name}>{username}</p>
-        <p className={styles.tag}>@{tag}</p>
-        <p className={styles.location}>{location}</p>
+        <p
+          style={{
+            color: `${getRandomColor()}`,
+          }}
+          className={styles.name}
+        >
+          {username}
+        </p>
+        <p
+          style={{
+            color: `${getRandomColor()}`,
+          }}
+          className={styles.tag}
+        >
+          @{tag}
+        </p>
+        <p
+          style={{
+            color: `${getRandomColor()}`,
+          }}
+          className={styles.location}
+        >
+          {location}
+        </p>
       </div>
 
       <ul className={styles.stats}>
@@ -47,3 +68,12 @@ Profile.propTypes = {
   views: PropTypes.number.isRequired,
   likes: PropTypes.number.isRequired,
 };
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}

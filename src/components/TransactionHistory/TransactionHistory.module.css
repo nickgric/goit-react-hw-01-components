@@ -1,0 +1,26 @@
+.transactions {
+  border-radius: 10px;
+  border-color: #ccc;
+  border-style: solid;
+  padding: 30px;
+  box-shadow: 5px 5px 5px 5px #ccc;
+  margin-bottom: 20px;
+
+  width: 500px;
+}
+
+.name {
+  font-weight: 900;
+  font-size: 30px;
+  text-align: left;
+  padding: 10px;
+}
+
+.value {
+  font-weight: 600;
+  padding: 10px;
+}
+
+.line:nth-child(even) {
+  background-color: #ccc;
+}

@@ -1,11 +1,11 @@
 import React from 'react';
-import s from './Section.module.css';
+import styles from './Section.module.css';
 
 export const Section = ({ children }) => {
   return (
-    <div className={s.section}>
-      <h1 className={s.title}>React-HW01 @nickgric</h1>
-      <div className={s.tasks}>{children}</div>
+    <div className={styles.section}>
+      <h1 className={styles.title}>React-HW01 @nickgric</h1>
+      <div className={styles.tasks}>{children}</div>
     </div>
   );
 };
