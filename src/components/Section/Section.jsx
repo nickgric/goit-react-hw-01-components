@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 import s from './Section.module.css';
 
 export const Section = ({ children }) => {
