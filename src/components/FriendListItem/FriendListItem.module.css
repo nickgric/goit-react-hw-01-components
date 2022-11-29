@@ -1,0 +1,51 @@
+.list {
+  list-style: none;
+  color: gray;
+
+  font-size: 15px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.item {
+  border-radius: 10px;
+  border-color: #ccc;
+  border-style: solid;
+  padding: 20px;
+  box-shadow: 5px 5px 5px 5px #ccc;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-weight: 900;
+  font-size: 25px;
+  text-align: center;
+}
+
+.statusOnline {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 50px;
+  border-radius: 25px;
+
+  background-color: darkcyan;
+}
+
+.statusOffline {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 50px;
+  border-radius: 25px;
+
+  background-color: brown;
+}
